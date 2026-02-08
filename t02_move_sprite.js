@@ -9,6 +9,15 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
+cnv = new Canvas(800, 700);
+
+box = new Sprite(200, 300, 50, 100, '20');
+box.color = 'purple';
+box.rotationSpeed = 2;
+box.vel.x = 2;
+
+circle = new Sprite(400, 300, 80,);
+circle.color = 'purple';
 
 }
 	
@@ -16,7 +25,7 @@ function setup() {
 // draw()
 /*******************************************************/
 function draw() {
-	
+background('grey');	
 }
 
 /*******************************************************/
