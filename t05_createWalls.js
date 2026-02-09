@@ -16,6 +16,9 @@ world.gravity.y = 10;
 wallLH  = new Sprite(0, height/2, 9, height, 'k');
 wallLH.color = 'black';
 
+wallRH  = new Sprite(0, height/2, 9, height, 'k');
+wallRH.color = 'blue';
+
 
 }
 	
