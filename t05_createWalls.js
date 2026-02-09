@@ -8,7 +8,14 @@
 // setup()
 /*******************************************************/
 function setup() {
-	console.log("setup: ");
+console.log("setup: ");
+
+cnv = new Canvas(800, 700);
+world.gravity.y = 10;
+
+wallLH  = new Sprite(0, height/2, 9, height, 'k');
+wallLH.color = 'black';
+
 
 }
 	
@@ -16,7 +23,7 @@ function setup() {
 // draw()
 /*******************************************************/
 function draw() {
-	
+background('grey');		
 }
 
 /*******************************************************/
