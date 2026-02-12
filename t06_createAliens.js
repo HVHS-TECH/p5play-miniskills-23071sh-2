@@ -27,6 +27,14 @@ world.gravity.y = 10;
 //platform_2 = new Sprite(500, 500, 15, 350, 'k');
 //platform_2.rotation = 90
 
+for (i = 0; i < 100; i++) {
+alien = new Sprite(110, 300, 30, 30 , 'd');
+alien.vel.x = 3;
+alien.vel.y = 4;
+alien.bounciness = 1;
+alien.friction = 0;
+}
+
 ball_1 = new Sprite(width/2, height/2, 50, 'd');
 ball_1.color = 'cyan';
 ball_1.vel.x = 2;

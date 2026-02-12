@@ -11,7 +11,7 @@ function setup() {
 	console.log("setup: ");
 cnv = new Canvas(800, 700);
 
-box = new Sprite(200, 300, 50, 100, '20');
+box = new Sprite(200, 300, 100, 100, '20');
 box.color = 'purple';
 
 circle = new Sprite(400, 300, 80,);
