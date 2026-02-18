@@ -8,32 +8,33 @@
 // setup()
 /*******************************************************/
 function setup() {
-	console.log("setup: ");
-cnv = new Canvas(500, 500);
-width = random(300,600);
-height = random(300,600);
+console.log("setup: ");
+cnv = new Canvas(800, 700);
+world.gravity.y = 10;
 
-red = new Sprite(50, 50, 100, 100);
-red.color = 'red';
+//circle = new Sprite(400, 300, 80,);
+//circle.color = 'purple';
+//circle.rotationSpeed = 2;
+//circle.vel.x = 2;
 
-green = new Sprite(400, 50, 100, 100);
-green.color = 'green';
+box = new Sprite(200, 300, 50, 100, 'd');
+box.color = 'purple';
+box.rotationSpeed = 2;
+box.vel.x = 2;
 
-blue = new Sprite(50, 450 ,  100, 100);
-blue.color = 'blue';
-
-yellow = new Sprite(400, 450, 100, 100);
-yellow.color = 'yellow';
-
-purple = new Sprite(350, 400 ,  100,100);
-purple.color = 'purple';
 }
+
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+background('grey');	
+
+box.moveTowards(mouseX, mouseY, 1);
+if (mouse.presses()) {
+box.moveTo(50, 50, 3);
+}
 }
 
 /*******************************************************/

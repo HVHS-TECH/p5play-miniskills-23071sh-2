@@ -1,20 +1,19 @@
 /*******************************************************/
-// P5.play: t07_groups
-// Create aliens and add to a group on mouse click
+// P5.play: t20_load_images
+// Add images
 // Written by ???
 /*******************************************************/
+function preload() {
+  imgBG   = loadImage('../assets/img/space.jfif');
+  imgFace = loadImage('../assets/img/face.png');
+}
 
 /*******************************************************/
 // setup()
 /*******************************************************/
 function setup() {
 console.log("setup: ");
-cnv = new Canvas(800, 700);
-
-function preload() {
-  imgBG   = loadImage('img/space.jfif');
-  imgFace = loadImage('img/face.png');
-}
+cnv = new Canvas(900, 700);
 
 ball_1 = new Sprite(width/3, height/3, 50, 'd');
 ball_1.color = 'cyan';

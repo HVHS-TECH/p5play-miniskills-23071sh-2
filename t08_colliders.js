@@ -1,6 +1,6 @@
 /*******************************************************/
-// P5.play: t07_groups
-// Create aliens and add to a group on mouse click
+// P5.play: t08_colliders
+// Add coliders
 // Written by ???
 /*******************************************************/
 	
